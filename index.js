@@ -8,11 +8,11 @@ import {Conta} from "./Conta.js";
 const cliente1 = new Cliente("Ricardo", 11122233390);
 
 
-const contaCorrenteDoRicardo = new Conta("corrente", 100, cliente1, 1001);
+const contaCorrenteDoRicardo = new ContaCorrente(cliente1, 1001);
 contaCorrenteDoRicardo.depositar(500);
 contaCorrenteDoRicardo.sacar(100);
 
-const contaPoupanca = new Conta("poupança", 50 , cliente1, 1001);
+const contaPoupanca = new ContaPoupanca(50 , cliente1, 1001);
 
 console.log(contaPoupanca);
 console.log(contaCorrenteDoRicardo);
