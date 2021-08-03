@@ -1,7 +1,6 @@
-import {Cliente} from "./Cliente.js";
-import {ContaCorrente} from "./ContaCorrente.js";
+import { Cliente } from "./Cliente.js";
+import { ContaCorrente } from "./ContaCorrente.js";
 import { ContaPoupanca } from "./ContaPoupanca.js";
-import {Conta} from "./Conta.js";
 
 
 // eles fazem parte da conta corrente onde foi feito os construtores
@@ -12,7 +11,7 @@ const contaCorrenteDoRicardo = new ContaCorrente(cliente1, 1001);
 contaCorrenteDoRicardo.depositar(500);
 contaCorrenteDoRicardo.sacar(100);
 
-const contaPoupanca = new ContaPoupanca(50 , cliente1, 1001);
+const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
 contaPoupanca.sacar(10);
 
 console.log(contaCorrenteDoRicardo);
